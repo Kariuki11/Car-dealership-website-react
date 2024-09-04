@@ -9,14 +9,14 @@ function Header() {
         <img src='/logo.svg' width={150} height={100} alt="logo" />
 
         <ul className='hidden md:flex gap-16'>
-            <li>Home</li>
-            <li>Search</li>
-            <li>New</li>
-            <li>Preowned</li>
+            <li className='font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary'>Home</li>
+            <li className='font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary'>Search</li>
+            <li className='font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary'>New</li>
+            <li className='font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary'>Preowned</li>
         </ul>
 
         {isSignedIn?
-            <div>
+            <div className='flex items-center gap-5'>
                 <UserButton/>
                 <Button>Submit Listing</Button>
             </div>

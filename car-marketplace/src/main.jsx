@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
 import './index.css'
+//import './index.css';  // Make sure your CSS file where Tailwind is imported is correctly linked
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 //import { Home } from './home';
 import Home from './home';
