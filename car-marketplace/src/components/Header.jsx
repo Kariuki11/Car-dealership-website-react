@@ -8,7 +8,7 @@ function Header() {
     <div className='flex justify-between items-center shadow-sm p-5'>
         <img src='/logo.svg' width={150} height={100} alt="logo" />
 
-        <ul>
+        <ul className='hidden md:flex gap-16'>
             <li>Home</li>
             <li>Search</li>
             <li>New</li>
