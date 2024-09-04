@@ -5,7 +5,7 @@ import { Button } from './ui/button';
 function Header() {
     const {user, isSignedIn}=useUser();
   return (
-    <div >
+    <div className='flex justify-between items-center shadow-sm p-5'>
         <img src='/logo.svg' width={150} height={100} alt="logo" />
 
         <ul>
