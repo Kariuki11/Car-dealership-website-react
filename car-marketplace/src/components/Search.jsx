@@ -10,7 +10,7 @@ import {
 
 function Search() {
   return (
-    <div className='p-2 md:p-5 bg-white rounded-md md:rounded-full flex-col md:flex-row gap-10 px-5 items-center w-[60%] md:w-max'>
+    <div className='p-2 md:p-5 bg-white rounded-md md:rounded-full flex-col md:flex-row gap-10 px-5 items-center w-[60%]'>
         <Select>
             <SelectTrigger className="outline-none md:border-none w-full shadow-none text-lg">
                 <SelectValue placeholder="Theme" />
