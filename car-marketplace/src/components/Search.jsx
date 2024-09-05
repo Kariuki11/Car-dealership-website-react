@@ -30,11 +30,15 @@ function Search() {
             </SelectTrigger>
             <SelectContent>
                 {Data.CarMakes.map((maker, index) => (
+                        <SelectItem key={index} value={maker.name}>{maker.name}</SelectItem>
+                ))}
+
+                {/* {Data.CarMakes.map((maker, index) => (
                     <SelectItem value={maker.name}>{maker.name}</SelectItem>
                 )}
-                <SelectItem value="light">Light</SelectItem>
-                <SelectItem value="dark">Dark</SelectItem>
-                <SelectItem value="system">System</SelectItem>
+                 */}
+
+
             </SelectContent>
         </Select>
         <Separator orientation="vertical" className="hidden md:block"/>
