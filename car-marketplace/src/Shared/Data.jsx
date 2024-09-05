@@ -55,3 +55,40 @@ const CarMakes=[
         name:"Toyota",
     }
 ]
+
+
+const Pricing=[
+    {
+        id:1,
+        name:"$1000",
+    },
+    {
+        id:2,
+        name:"$5000",
+    }
+    {
+        id:3,
+        name:"$10000",
+    },
+    {
+        id:4,
+        name:"$20000",
+    },
+    {
+        id:5,
+        name:"$50000",
+    },
+    {
+        id:6,
+        name:"$100000",
+    },
+    {
+        id:7,
+        name:"$500000",
+    }
+]
+
+export default{
+    CarMakes,
+    Pricing
+}

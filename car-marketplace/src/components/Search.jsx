@@ -9,6 +9,7 @@ import {
   } from "@/components/ui/select"
   import { Separator } from "@/components/ui/separator";
   import { CiSearch } from "react-icons/ci";
+    import Data from '@/data.json'
 
 function Search() {
   return (
@@ -28,6 +29,9 @@ function Search() {
                 <SelectValue placeholder="Car Makes" />
             </SelectTrigger>
             <SelectContent>
+                {Data.CarMakes.map((maker, index) => (
+                    <SelectItem value={maker.name}>{maker.name}</SelectItem>
+                )}
                 <SelectItem value="light">Light</SelectItem>
                 <SelectItem value="dark">Dark</SelectItem>
                 <SelectItem value="system">System</SelectItem>
