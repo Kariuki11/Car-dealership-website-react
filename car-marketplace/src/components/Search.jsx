@@ -23,7 +23,7 @@ function Search() {
                 <SelectItem value="system">System</SelectItem>
             </SelectContent>
         </Select>
-        <Separator orientation="vertical" />
+        <Separator orientation="vertical" className="hidden md:block" />
         <Select>
             <SelectTrigger className="outline-none md:border-none w-[180px] shadow-none text-lg">
                 <SelectValue placeholder="Theme" />
@@ -34,7 +34,7 @@ function Search() {
                 <SelectItem value="system">System</SelectItem>
             </SelectContent>
         </Select>
-        <Separator orientation="vertical" />
+        <Separator orientation="vertical" className="hidden md:block"/>
         <Select>
             <SelectTrigger className="outline-none md:border-none w-[180px] shadow-none text-lg">
                 <SelectValue placeholder="Theme 3" />
@@ -45,7 +45,7 @@ function Search() {
                 <SelectItem value="system">System</SelectItem>
             </SelectContent>
         </Select>
-        <CiSearch />
+        <CiSearch className='text-xl'/>
     </div>
   )
 }
