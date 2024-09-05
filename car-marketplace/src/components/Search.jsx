@@ -46,7 +46,7 @@ function Search() {
             </SelectContent>
         </Select>
         <div>
-        <CiSearch className='text-xl bg-primary cursor-pointer'/>
+        <CiSearch className='text-xl cursor-pointer hover:scale-105 transition-all'/>
         </div>
     </div>
   )
