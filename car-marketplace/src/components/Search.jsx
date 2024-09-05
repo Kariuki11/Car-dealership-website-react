@@ -1,6 +1,5 @@
 import React from 'react'
 //import { Separator } from "@/components/ui/separator"
-import { Separator } from "@/components/ui/separator";
 import {
     Select,
     SelectContent,
@@ -8,6 +7,8 @@ import {
     SelectTrigger,
     SelectValue,
   } from "@/components/ui/select"
+  import { Separator } from "@/components/ui/separator";
+  import { CiSearch } from "react-icons/ci";
 
 function Search() {
   return (
@@ -44,6 +45,7 @@ function Search() {
                 <SelectItem value="system">System</SelectItem>
             </SelectContent>
         </Select>
+        <CiSearch />
     </div>
   )
 }
