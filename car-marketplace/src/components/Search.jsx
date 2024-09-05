@@ -1,4 +1,6 @@
 import React from 'react'
+//import { Separator } from "@/components/ui/separator"
+import { Separator } from "@/components/ui/separator";
 import {
     Select,
     SelectContent,
@@ -6,13 +8,12 @@ import {
     SelectTrigger,
     SelectValue,
   } from "@/components/ui/select"
-  
 
 function Search() {
   return (
-    <div className='p-2 md:p-5 bg-white rounded-md md:rounded-full flex-col md:flex-row gap-10 px-5 items-center w-[60%]'>
+    <div className='p-2 md:p-5 bg-white rounded-md md:rounded-full flex gap-5 items-center w-[60%]'>
         <Select>
-            <SelectTrigger className="outline-none md:border-none w-full shadow-none text-lg">
+            <SelectTrigger className="outline-none md:border-none w-[180px] shadow-none text-lg">
                 <SelectValue placeholder="Theme" />
             </SelectTrigger>
             <SelectContent>
@@ -21,8 +22,9 @@ function Search() {
                 <SelectItem value="system">System</SelectItem>
             </SelectContent>
         </Select>
+        <Separator orientation="vertical" />
         <Select>
-            <SelectTrigger className="w-[180px] outline-none md:border-none w-full shadow-none text-lg">
+            <SelectTrigger className="outline-none md:border-none w-[180px] shadow-none text-lg">
                 <SelectValue placeholder="Theme" />
             </SelectTrigger>
             <SelectContent>
@@ -31,9 +33,10 @@ function Search() {
                 <SelectItem value="system">System</SelectItem>
             </SelectContent>
         </Select>
+        <Separator orientation="vertical" />
         <Select>
-            <SelectTrigger className="w-[180px] outline-none md:border-none w-full shadow-none text-lg">
-                <SelectValue placeholder="Theme" />
+            <SelectTrigger className="outline-none md:border-none w-[180px] shadow-none text-lg">
+                <SelectValue placeholder="Theme 3" />
             </SelectTrigger>
             <SelectContent>
                 <SelectItem value="light">Light</SelectItem>
@@ -41,9 +44,66 @@ function Search() {
                 <SelectItem value="system">System</SelectItem>
             </SelectContent>
         </Select>
-
     </div>
   )
 }
 
 export default Search
+
+
+
+
+
+
+
+
+
+// import React from 'react'
+// import {
+//     Select,
+//     SelectContent,
+//     SelectItem,
+//     SelectTrigger,
+//     SelectValue,
+//   } from "@/components/ui/select"
+  
+
+// function Search() {
+//   return (
+//     <div className='p-2 md:p-5 bg-white rounded-md md:rounded-full flex-col md:flex-row gap-10 px-5 items-center w-[60%]'>
+//         <Select>
+//             <SelectTrigger className="outline-none md:border-none w-full shadow-none text-lg">
+//                 <SelectValue placeholder="Theme" />
+//             </SelectTrigger>
+//             <SelectContent>
+//                 <SelectItem value="light">Light</SelectItem>
+//                 <SelectItem value="dark">Dark</SelectItem>
+//                 <SelectItem value="system">System</SelectItem>
+//             </SelectContent>
+//         </Select>
+//         <Select>
+//             <SelectTrigger className="w-[180px] outline-none md:border-none w-full shadow-none text-lg">
+//                 <SelectValue placeholder="Theme" />
+//             </SelectTrigger>
+//             <SelectContent>
+//                 <SelectItem value="light">Light</SelectItem>
+//                 <SelectItem value="dark">Dark</SelectItem>
+//                 <SelectItem value="system">System</SelectItem>
+//             </SelectContent>
+//         </Select>
+//         <Select>
+//             <SelectTrigger className="w-[180px] outline-none md:border-none w-full shadow-none text-lg">
+//                 <SelectValue placeholder="Theme" />
+//             </SelectTrigger>
+//             <SelectContent>
+//                 <SelectItem value="light">Light</SelectItem>
+//                 <SelectItem value="dark">Dark</SelectItem>
+//                 <SelectItem value="system">System</SelectItem>
+//             </SelectContent>
+//         </Select>
+
+//     </div>
+//   )
+// }
+
+// export default Search
