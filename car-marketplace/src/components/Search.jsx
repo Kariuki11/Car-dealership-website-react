@@ -15,18 +15,17 @@ function Search() {
     <div className='p-2 md:p-5 bg-white rounded-md md:rounded-full flex gap-5 items-center w-[60%]'>
         <Select>
             <SelectTrigger className="outline-none md:border-none w-[180px] shadow-none text-lg">
-                <SelectValue placeholder="Theme" />
+                <SelectValue placeholder="Cars" />
             </SelectTrigger>
             <SelectContent>
-                <SelectItem value="light">Light</SelectItem>
-                <SelectItem value="dark">Dark</SelectItem>
-                <SelectItem value="system">System</SelectItem>
+                <SelectItem value="light">New</SelectItem>
+                <SelectItem value="dark">Old</SelectItem>
             </SelectContent>
         </Select>
         <Separator orientation="vertical" className="hidden md:block" />
         <Select>
             <SelectTrigger className="outline-none md:border-none w-[180px] shadow-none text-lg">
-                <SelectValue placeholder="Theme" />
+                <SelectValue placeholder="Car Makes" />
             </SelectTrigger>
             <SelectContent>
                 <SelectItem value="light">Light</SelectItem>
