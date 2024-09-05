@@ -6,7 +6,7 @@ const CarMakes=[
     {
         id:2,
         name:"Audi",
-    }
+    },
     {
         id:3,
         name:"Mazda",
@@ -34,7 +34,8 @@ const CarMakes=[
     {
         id:1,
         name:"Toyota",
-    },{
+    },
+    {
         id:1,
         name:"Toyota",
     },
@@ -65,7 +66,7 @@ const Pricing=[
     {
         id:2,
         name:"$5000",
-    }
+    },
     {
         id:3,
         name:"$10000",

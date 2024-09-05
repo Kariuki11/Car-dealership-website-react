@@ -10,7 +10,9 @@ import {
   import { Separator } from "@/components/ui/separator";
   import { CiSearch } from "react-icons/ci";
   //import Data from '@/data.json'
-  import Data from '../data.json'; // Adjust the path based on where Search.jsx is located
+  //import Data from '../data.json'; // Adjust the path based on where Search.jsx is located
+  import Data from '../Shared/Data.jsx';
+
 
 function Search() {
   return (
@@ -48,9 +50,12 @@ function Search() {
                 <SelectValue placeholder="Theme 3" />
             </SelectTrigger>
             <SelectContent>
-                <SelectItem value="light">Light</SelectItem>
-                <SelectItem value="dark">Dark</SelectItem>
-                <SelectItem value="system">System</SelectItem>
+                {Data.Pricing.map((price,index)=>(
+                    <SelectItem value={price.amount}>{price.amount}</SelectItem>
+                ))}
+                
+
+                
             </SelectContent>
         </Select>
         <div>
