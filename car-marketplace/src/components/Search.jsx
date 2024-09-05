@@ -9,7 +9,8 @@ import {
   } from "@/components/ui/select"
   import { Separator } from "@/components/ui/separator";
   import { CiSearch } from "react-icons/ci";
-  import Data from '@/data.json'
+  //import Data from '@/data.json'
+  import Data from '../data.json'; // Adjust the path based on where Search.jsx is located
 
 function Search() {
   return (
